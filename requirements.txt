@@ -1,0 +1,54 @@
+# Reconstructed from the imports used across the notebooks and pinned to the versions
+# present in the author's `nlp` conda environment (Python 3.11.0), which is where the
+# model-training notebooks were run.
+#
+# NOTE ON PROVENANCE: that environment has received package updates since the paper was
+# published, so treat these pins as a known-working starting point rather than an exact
+# record of the versions that produced the published results. `scipy` in particular is
+# left unpinned because its installed version clearly post-dates the analysis.
+
+# --- core data stack ---
+pandas==1.5.3
+numpy==1.26.3
+scipy
+pyarrow==11.0.0
+
+# --- classical ML / statistics ---
+scikit-learn==1.2.2
+statsmodels==0.14.6
+xgboost==1.7.3
+
+# --- deep learning ---
+torch==2.0.1
+transformers==4.46.3
+datasets==2.14.4
+evaluate==0.4.1
+
+# --- interpretability and fairness ---
+captum==0.7.0
+bertviz==1.4.0
+transformers-interpret==0.10.0
+aequitas==1.0.0
+
+# --- evaluation and reporting ---
+plot-metric==0.0.6
+tableone==0.8.0
+hcuppy==0.0.7
+
+# --- plotting ---
+matplotlib==3.7.1
+seaborn==0.13.2
+
+# --- clinical text preprocessing ---
+nltk==3.8.1
+contractions==0.1.73
+inflect==7.0.0
+
+# --- signal processing (eICU / HiRID vitals feature engineering) ---
+PyWavelets==1.5.0
+librosa==0.9.2
+
+# --- utilities ---
+tqdm==4.66.1
+GPUtil==1.4.0
+nvidia-ml-py==13.595.45
